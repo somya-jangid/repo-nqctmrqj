@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Schedule</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+      <div class="logo">TrainBooking</div>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Book Tickets</a></li>
+              <li><a href="bookings.html">My Bookings</a></li>
+              <li><a href="pnr.html">PNR Status</a></li>
+              <li><a href="schedule.html" class="active">Train Schedule</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="login.html" class="login-btn">Login/Sign Up</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main class="schedule">
+      <h1>Train Schedule</h1>
+      <form class="schedule-form">
+          <input type="text" placeholder="Train Number/Name" name="train">
+          <input type="date" name="date">
+          <button type="submit">Search</button>
+      </form>
+      <table class="schedule-table">
+          <thead>
+              <tr>
+                  <th>Station Name</th>
+                  <th>Arrival Time</th>
+                  <th>Departure Time</th>
+                  <th>Day</th>
+                  <th>Platform</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Schedule results will be populated here -->
+          </tbody>
+      </table>
+  </main>
+  <footer>
+      <p>© 2023 TrainBooking. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
