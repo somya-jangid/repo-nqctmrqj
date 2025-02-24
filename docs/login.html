@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Sign Up</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+      <div class="logo">TrainBooking</div>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Book Tickets</a></li>
+              <li><a href="bookings.html">My Bookings</a></li>
+              <li><a href="pnr.html">PNR Status</a></li>
+              <li><a href="schedule.html">Train Schedule</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="login.html" class="active login-btn">Login/Sign Up</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main class="auth">
+      <div class="tabs">
+          <button class="tab-button active" data-target="login-form">Login</button>
+          <button class="tab-button" data-target="signup-form">Sign Up</button>
+      </div>
+      <div class="tab-content">
+          <form id="login-form" class="auth-form active">
+              <input type="text" placeholder="Email or Username" name="username">
+              <input type="password" placeholder="Password" name="password">
+              <label>
+                <input type="checkbox" name="remember"> Remember Me
+              </label>
+              <button type="submit">Login</button>
+              <a href="#">Forgot Password?</a>
+          </form>
+          <form id="signup-form" class="auth-form">
+              <input type="text" placeholder="Full Name" name="fullname">
+              <input type="email" placeholder="Email" name="email">
+              <input type="password" placeholder="Password" name="password">
+              <input type="password" placeholder="Confirm Password" name="confirm_password">
+              <label>
+                <input type="checkbox" name="terms"> I agree to the <a href="#">Terms and Conditions</a>
+              </label>
+              <button type="submit">Sign Up</button>
+          </form>
+      </div>
+  </main>
+  <footer>
+      <p>© 2023 TrainBooking. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
