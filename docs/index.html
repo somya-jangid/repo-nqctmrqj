@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TrainBooking</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Book Tickets</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="pnr.html">PNR Status</a></li>
+                <li><a href="schedule.html">Train Schedule</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html" class="login-btn">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Book Your Train Tickets Easily</h1>
+            <p>Find the best deals and travel with comfort.</p>
+            <form class="search-form">
+                <input type="text" placeholder="From" name="from">
+                <input type="text" placeholder="To" name="to">
+                <input type="date" name="date">
+                <select name="class">
+                    <option>All Classes</option>
+                    <option>Sleeper</option>
+                    <option>AC 3 Tier</option>
+                    <option>AC 2 Tier</option>
+                    <option>AC 1 Tier</option>
+                </select>
+                <select name="quota">
+                    <option>General</option>
+                    <option>Tatkal</option>
+                    <option>Ladies</option>
+                </select>
+                <button type="submit">Search Trains</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Destinations/Offers</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://www.pexels.com/photo/train-station-during-night-time-256559/" alt="Night view of a train station">
+                <p>Experience Night Journeys</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="https://unsplash.com/photos/brown-and-black-train-on-rail-tracks-during-daytime-h-HIYsH5k_Y" alt="Train on railway tracks during daytime">
+                <p>Daytime Express</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="https://www.pexels.com/photo/railway-station-near-mountains-1578728/" alt="Railway station near mountains">
+                <p>Scenic Mountain Routes</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 TrainBooking. All rights reserved.</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
